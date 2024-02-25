@@ -1,0 +1,16 @@
+import * as TestingStorybook from './testing-storybook.component.stories';
+import {Meta,Story,Canvas} from '@storybook/blocks';
+
+<Meta of={TestingStorybook} />
+
+<div dir='rtl'>
+این یک داکیومنت تمپلیت است برای ارائه
+</div>
+<h3>component :</h3>
+
+<Story>{{
+  component: TestingStorybook,
+  props: {},
+}}</Story>
+
+<Canvas of={TestingStorybook.Default} />

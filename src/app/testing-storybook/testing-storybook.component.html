@@ -1,0 +1,17 @@
+<div class="container">
+  <button
+    type="button"
+    (click)="onClick()"
+    [ngClass]="classes"
+    [ngStyle]="{ 'background-color': backgroundColor }"
+  >
+    {{ label }}
+  </button>
+
+  <ng-container *ngIf="isVisible">
+    <div class="content" data-testid="element">
+      hello there someBody clicked the button
+    </div>
+  </ng-container>
+
+</div>
